@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/insert_bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".InsertActivity">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="ENTER YOUR DETAILS"
+        android:fontFamily="serif"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="100dp"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/acc_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER ACCOUNT NUMBER"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@id/main_title"
+        android:textStyle="bold"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER NAME"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@id/acc_no"
+        android:textStyle="bold"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER EMAIL-ID"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@id/name"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER AMOUNT"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@id/email"
+        android:textStyle="bold"
+        android:inputType="number"/>
+
+    <TableRow
+        android:layout_below="@id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="BACK"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/red"
+            android:background="@drawable/btn_rounded"
+            android:textSize="30sp"
+            android:padding="20dp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SAVE DETAILS"
+            android:textColor="@color/red"
+            android:background="@drawable/btn_rounded"
+            android:textSize="30sp"
+            android:padding="20dp"
+            android:textStyle="bold"/>
+    </TableRow>
+
+
+</RelativeLayout>

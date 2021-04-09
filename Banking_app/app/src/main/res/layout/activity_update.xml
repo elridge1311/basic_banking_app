@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/insert_bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:id="@+id/main_title_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="serif"
+        android:text="ENTER YOUR DETAILS"
+        android:textColor="@color/purple_700"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/acc_no_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER ACCOUNT NUMBER"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@id/main_title_update"
+        android:textStyle="bold"
+        android:inputType="number"
+        tools:ignore="HardcodedText"/>
+
+    <EditText
+        android:id="@+id/name_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER NAME"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@id/acc_no_update"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        tools:ignore="HardcodedText"/>
+
+    <EditText
+        android:id="@+id/email_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER EMAIL-ID"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@id/name_update"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/amount_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER AMOUNT"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@id/email_update"
+        android:textStyle="bold"
+        android:inputType="number"
+        tools:ignore="HardcodedText"/>
+
+    <TableRow
+        android:layout_below="@id/amount_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <Button
+            android:id="@+id/back_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/red"
+            android:background="@drawable/btn_rounded"
+            android:textSize="30sp"
+            android:padding="20dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"
+            android:layout_marginEnd="25dp" />
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPDATE DETAILS"
+            android:textColor="@color/red"
+            android:background="@drawable/btn_rounded"
+            android:textSize="30sp"
+            android:padding="20dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+    </TableRow>
+
+</RelativeLayout>

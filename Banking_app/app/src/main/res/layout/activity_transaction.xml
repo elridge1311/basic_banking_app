@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/insert_bg"
+    android:orientation="vertical"
+    tools:context=".TransactionActivity">
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="150dp"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/back_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="BACK"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/red"
+            android:background="@drawable/btn_rounded"
+            android:textSize="30sp"
+            android:padding="20dp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/transfer_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="TRANSFER MONEY"
+            android:textColor="@color/red"
+            android:background="@drawable/btn_rounded"
+            android:textSize="30sp"
+            android:padding="20dp"
+            android:textStyle="bold"/>
+    </TableRow>
+
+
+</RelativeLayout>
